@@ -1,0 +1,9 @@
+.container
+      fieldset
+        form(action='/', method='post')
+          input.ghost-input(name='city', type='text', placeholder='Enter a City', required='')
+          input.ghost-button(type='submit', value='Get Weather')
+        if weather
+          p= weather
+        if error
+          p= error
